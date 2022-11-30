@@ -17,7 +17,7 @@ pub enum Period {
     Second,
 }
 
-impl From<Period> for i32 {
+impl From<Period> for u32 {
     fn from(period: Period) -> Self {
         match period {
             Period::Once => bindings::SIMCONNECT_PERIOD_SIMCONNECT_PERIOD_ONCE,

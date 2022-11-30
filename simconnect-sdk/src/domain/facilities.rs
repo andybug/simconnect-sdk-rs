@@ -10,7 +10,7 @@ pub enum FacilityType {
     VOR,
 }
 
-impl From<FacilityType> for i32 {
+impl From<FacilityType> for u32 {
     fn from(facility_type: FacilityType) -> Self {
         match facility_type {
             FacilityType::Airport => {

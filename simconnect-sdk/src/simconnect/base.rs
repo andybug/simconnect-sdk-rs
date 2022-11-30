@@ -137,7 +137,7 @@ impl SimConnect {
             );
         };
 
-        let recv_id = unsafe { (*data_buf).dwID as i32 };
+        let recv_id = unsafe { (*data_buf).dwID as u32 };
 
         if recv_id == bindings::SIMCONNECT_RECV_ID_SIMCONNECT_RECV_ID_NULL {
             Ok(None)
