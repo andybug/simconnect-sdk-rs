@@ -15,7 +15,7 @@ pub enum SimConnectError {
     UnimplementedEventType(u32),
     /// An unimplemented message type has been received by the SDK.
     #[error("Unimplemented notification in the SDK: {0}")]
-    UnimplementedMessageType(i32),
+    UnimplementedMessageType(u32),
     /// Object already registered with the client instance.
     #[error("Object `{0}` has already been registered")]
     ObjectAlreadyRegistered(String),
